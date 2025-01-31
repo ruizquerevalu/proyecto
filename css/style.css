@@ -1,0 +1,252 @@
+/*Mi estilo CSS general utilizado para mi proyecto*/
+
+/*Realizando respectivo Reseteo CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+
+}
+
+/*Color título principal */
+h1, h4{
+    color: #3b0808;
+    text-align: center;
+    font-family: "Vesper Libre", serif;
+}
+
+
+/*Color fondo principal*/
+
+body{
+    background-color:white;
+    font-family: "Vesper Libre", serif;
+}
+
+.img-logo{
+    text-align: center;
+}    
+
+/* Estilo cabecera */
+
+header{
+    text-align: center;
+    background-color:#fae83e;
+    font-family: "Vesper Libre", serif;
+    flex-wrap: wrap;
+}
+
+/*Diseño mi menu principal*/
+   
+
+.nav-link:focus, .nav-link:hover {
+    color: #eefd08;
+}
+
+.bg-body-tertiary {
+    
+    background-color: #3b0808 !important;
+}
+
+.btn-outline-success {
+    --bs-btn-color: white;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-color: #3b0808;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: white;
+
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: #3b0808;
+    background-color: #eefd08;
+    border-color: #3b0808;
+}
+
+.navbar-toggler {
+    background-color: white;
+    color: white;
+}
+
+.navbar-toggler:focus {
+    background-color: white;
+    color: white;
+    border: none;
+}
+
+
+@media (min-width: 1200px) {
+    .navbar-toggler {
+        
+        border-bottom-color:#eefd08;
+    }
+}
+
+/* Estilo main */
+
+main {
+    align-items: center;
+    color: #3b0808;
+    font-family: "Vesper Libre", serif;
+    padding: 1%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.carousel-caption {
+    color:#eefd08;
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: #3b0808;
+    
+}
+
+.card-group{
+    align-items: center;
+    padding: 10px;
+    
+}
+.col{
+    padding: 10px;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .h2, h2 {
+        font-size: 2rem;
+        color: #3b0808;
+    }
+}
+
+.carouselExampleAutoplaying{
+    align-items: center;
+}
+
+.card-body{
+    text-align: center;
+}
+
+
+/* Flexbox Estilo Menu */
+
+.navbar {
+    background-color: #B6D9FE;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.container{
+    display: flex;
+
+}
+
+.sidebar {
+    width: 25%;
+    background-color: white;
+    padding: 20 px;
+}
+
+.main-content {
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    
+}
+
+/* Estilo de la section usando Flex*/
+
+section{
+background-color:#3b0808;
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 2%;
+flex-wrap:nowrap;
+
+}
+
+section div {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+section div h4 {
+
+    color: #eefd08;
+}
+
+
+/* Estilo footer */
+
+footer{
+    text-align: center;
+    color: white;
+    background-color:#3b0808;
+    font-family: "Vesper Libre", serif;
+    padding: 2px;
+    margin-top: 0px;
+
+}
+
+/* Uso de medias query para mobile */
+
+@media (min-width: 100px) and (max-width: 480px) {
+    section {
+      display:flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 480px) {
+    img {
+      width: 80%;
+    }
+  }
+
+
+  @media (min-width: 100px) and (max-width: 480px) {
+    footer {
+      display:flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 480px) {
+    form {
+      display:list-item;
+      flex-wrap:wrap;
+    }
+  }
+
+
+
+
+
+
+  

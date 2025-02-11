@@ -26,16 +26,18 @@ body{
 
 .img-logo{
     text-align: center;
+    
 }    
 
 /* Estilo cabecera */
 
 header{
     text-align: center;
-    background-color:#fae83e;
+    background-color:white;
     font-family: "Vesper Libre", serif;
     flex-wrap: wrap;
 }
+
 
 /*Diseño mi menu principal*/
    
@@ -86,12 +88,37 @@ header{
 /* Estilo main */
 
 main {
+    
     align-items: center;
     color: #3b0808;
     font-family: "Vesper Libre", serif;
     padding: 1%;
-    flex-wrap: wrap;
+    align-items: center;   
     text-align: center;
+   
+    
+}
+
+
+.ofertas {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto ;
+    color: #3b0808;
+    font-family: "Vesper Libre", serif;
+    row-gap: 1rem;
+    padding: 1rem;
+    align-items: center;   
+    text-align: center;
+   
+    
+}
+
+main div img{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
 }
 
 
@@ -185,6 +212,7 @@ align-items: center;
 padding: 2%;
 flex-wrap:nowrap;
 
+
 }
 
 section div {
@@ -194,6 +222,7 @@ section div {
     flex-direction: column;
     align-items: center;
     color: white;
+    
 }
 
 section div h4 {
@@ -205,48 +234,71 @@ section div h4 {
 /* Estilo footer */
 
 footer{
-    text-align: center;
+    
     color: white;
     background-color:#3b0808;
     font-family: "Vesper Libre", serif;
     padding: 2px;
     margin-top: 0px;
-
+    text-align: center;
+    justify-content: center;
 }
 
 /* Uso de medias query para mobile */
 
-@media (min-width: 100px) and (max-width: 480px) {
+@media screen and (min-width: 100px) and (max-width: 480px) {
     section {
       display:flex;
       flex-wrap: wrap;
     }
   }
 
-  @media (min-width: 100px) and (max-width: 480px) {
+  @media screen and (min-width: 100px) and (max-width: 480px) {
     img {
       width: 80%;
     }
   }
 
+/* Uso de medias query para tablet */
 
-  @media (min-width: 100px) and (max-width: 480px) {
+  @media screen and (main-width: 600px) {
+    .ofertas {
+        grid-template-columns: repeat(2,1);
+        grid-template-rows: repeat(2,40%);
+    }
+  }
+
+  @media screen and (min-width: 600px) {
     footer {
       display:flex;
       flex-wrap: wrap;
+      
     }
   }
 
-  @media (min-width: 100px) and (max-width: 480px) {
+  /* Uso de medias query para desktop */
+
+  @media (min-width: 768px) and (max-width: 1281px) {
+    .ofertas {
+        grid-template-columns: repeat(2,1);
+        grid-template-rows: repeat(2,40%);
+    }
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1281px) {
+    footer {
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 1281px) {
     form {
-      display:list-item;
+      display:inline-block;
       flex-wrap:wrap;
     }
   }
-
-
-
-
-
 
   

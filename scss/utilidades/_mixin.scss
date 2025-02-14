@@ -1,0 +1,60 @@
+
+//Declaración de Mixin//
+
+@mixin grid ($grip, $column, $row){
+display: $grip;
+grid-template-columns:$column;
+grid-template-rows: $row;    
+}
+
+@mixin grid2 ($column, $row){
+    
+    grid-template-columns:$column;
+    grid-template-rows: $row;    
+    }
+
+@mixin flex {
+    text-align: center;
+    flex-wrap: wrap;
+    background-color:$color-bg;
+    font-family: $font-family;
+}
+
+@mixin flexnavbar{
+    display: flex;
+    list-style-type: none;
+}
+
+@mixin main {
+
+    align-items: center;
+    color: nth($list-color, 11);
+    font-family: $font-family;
+    padding: 1rem;  
+    text-align: center;
+
+}
+
+@mixin section{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap:nowrap;
+}
+
+@mixin footer{
+
+    font-family: $font-family;
+        padding: 2px;
+        margin-top: 0px;
+        text-align: center;
+        justify-content: center;
+
+}
+
+@mixin responsive {
+    display:flex;
+    flex-wrap: wrap;
+}

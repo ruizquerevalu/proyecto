@@ -1,304 +1,267 @@
-/*Mi estilo CSS general utilizado para mi proyecto*/
-
-/*Realizando respectivo Reseteo CSS*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Color título principal */
-h1, h4{
-    color: #3b0808;
-    text-align: center;
-    font-family: "Vesper Libre", serif;
+/* Estilos generales */
+body h1 {
+  background-color: white;
+  font-family: "Vesper Libre", serif;
+  color: #3b0808;
 }
 
-
-/*Color fondo principal*/
-
-body{
-    background-color:white;
-    font-family: "Vesper Libre", serif;
+@media screen and (min-width: 600px) {
+  .ofertas {
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 2, 40%;
+  }
 }
-
-.img-logo{
-    text-align: center;
-    
-}    
-
-/* Estilo cabecera */
-
-header{
-    text-align: center;
-    background-color:white;
-    font-family: "Vesper Libre", serif;
+@media screen and (min-width: 600px) {
+  footer {
+    display: flex;
     flex-wrap: wrap;
+  }
 }
-
-
-/*Diseño mi menu principal*/
-   
-
-.nav-link:focus, .nav-link:hover {
-    color: #eefd08;
+@media (min-width: 768px) and (max-width: 1281px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
-
-.bg-body-tertiary {
-    
-    background-color: #3b0808 !important;
+@media (min-width: 100px) and (max-width: 1281px) {
+  form {
+    display: inline-block;
+    flex-wrap: wrap;
+  }
 }
-
-.btn-outline-success {
-    --bs-btn-color: white;
-    --bs-btn-border-color: #ffffff;
-    --bs-btn-hover-color: #3b0808;
-    --bs-btn-hover-bg: white;
-    --bs-btn-hover-border-color: white;
-
+header {
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: white;
+  font-family: "Vesper Libre", serif;
 }
-
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    color: #3b0808;
-    background-color: #eefd08;
-    border-color: #3b0808;
+header .img {
+  width: 80%;
 }
-
-.navbar-toggler {
-    background-color: white;
-    color: white;
+header .navbar {
+  background-color: #3b0808;
 }
-
-.navbar-toggler:focus {
-    background-color: white;
-    color: white;
-    border: none;
+header .navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
-
+header .navbar li {
+  margin: 0 15px;
+}
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+header .container {
+  display: flex;
+}
+header .sidebar {
+  width: 25%;
+  background-color: white;
+  padding: 20 px;
+}
+header .main-content {
+  width: 75%;
+  background-color: white;
+  padding: 20px;
+}
+header .nav-link:focus, header .nav-link:hover {
+  color: #eefd08;
+}
+header .bg-body-tertiary {
+  background-color: #3b0808 !important;
+}
+header .btn-outline-success {
+  --bs-btn-color: white;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-color: #3b0808;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: white;
+}
+header .btn-check:checked + .btn, header .btn.active, header .btn.show, header .btn:first-child:active, header :not(.btn-check) + .btn:active {
+  color: #3b0808;
+  background-color: #eefd08;
+  border-color: #3b0808;
+}
+header .navbar-toggler {
+  background-color: white;
+  color: white;
+}
+header .navbar-toggler:focus {
+  background-color: white;
+  color: white;
+  border: none;
+}
 @media (min-width: 1200px) {
-    .navbar-toggler {
-        
-        border-bottom-color:#eefd08;
-    }
+  header .navbar-toggler {
+    border-bottom-color: #eefd08;
+  }
 }
-
-/* Estilo main */
 
 main {
-    
-    align-items: center;
-    color: #3b0808;
-    font-family: "Vesper Libre", serif;
-    padding: 1%;
-    align-items: center;   
-    text-align: center;
-   
-    
+  align-items: center;
+  color: #3b0808;
+  font-family: "Vesper Libre", serif;
+  padding: 1rem;
+  text-align: center;
 }
-
-
-.ofertas {
-
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:auto auto ;
-    color: #3b0808;
-    font-family: "Vesper Libre", serif;
-    row-gap: 1rem;
-    padding: 1rem;
-    align-items: center;   
-    text-align: center;
-   
-    
+main .ofertas {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #3b0808;
+  row-gap: 2rem;
+  padding: 1rem;
+  margin: 0;
 }
-
-main div img{
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
+main .btn:hover {
+  color: #eefd08;
+  background-color: #3b0808;
+  border-color: #3b0808;
 }
-
-
-.carousel-caption {
-    color:#eefd08;
+main .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #3b0808;
+  --bs-btn-border-color: #3b0808;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3b0808;
+  --bs-btn-hover-border-color: #3b0808;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #3b0808;
+  --bs-btn-active-border-color: #3b0808;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #3b0808;
+  --bs-btn-disabled-border-color: #3b0808;
 }
-
-.card-title {
-    margin-bottom: var(--bs-card-title-spacer-y);
-    color: #3b0808;
-    
+main .carousel-caption {
+  color: #eefd08;
 }
-
-.card-group{
-    align-items: center;
-    padding: 10px;
-    
+main .card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+  color: #3b0808;
 }
-.col{
-    padding: 10px;
-    align-items: center;
+main .card-group {
+  align-items: center;
+  padding: 10px;
 }
-
+main .col {
+  padding: 10px;
+  align-items: center;
+}
+main .carouselExampleAutoplaying {
+  align-items: center;
+}
+main .card-body {
+  text-align: center;
+}
 @media (min-width: 1200px) {
-    .h2, h2 {
-        font-size: 2rem;
-        color: #3b0808;
-    }
+  main .h2, main h2 {
+    font-size: 2rem;
+    color: #3b0808;
+  }
 }
 
-.carouselExampleAutoplaying{
-    align-items: center;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  background-color: #3b0808;
+  padding: 2%;
+  color: white;
+  gap: 25%;
 }
-
-.card-body{
-    text-align: center;
-}
-
-
-/* Flexbox Estilo Menu */
-
-.navbar {
-    background-color: #B6D9FE;
-}
-
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-.navbar li {
-    margin: 0 15px;
-}
-
-
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
-
-.container{
-    display: flex;
-
-}
-
-.sidebar {
-    width: 25%;
-    background-color: white;
-    padding: 20 px;
-}
-
-.main-content {
-    width: 75%;
-    background-color: white;
-    padding: 20px;
-    
-}
-
-/* Estilo de la section usando Flex*/
-
-section{
-background-color:#3b0808;
-display:flex;
-justify-content: center;
-align-items: center;
-padding: 2%;
-flex-wrap:nowrap;
-
-
-}
-
-section div {
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    
-}
-
-section div h4 {
-
+@media (min-width: 100px) {
+  section .h4, section h4 {
+    font-size: 1.5rem;
     color: #eefd08;
+  }
+}
+section .div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-/* Estilo footer */
-
-footer{
-    
-    color: white;
-    background-color:#3b0808;
-    font-family: "Vesper Libre", serif;
-    padding: 2px;
-    margin-top: 0px;
-    text-align: center;
-    justify-content: center;
+footer {
+  font-family: "Vesper Libre", serif;
+  padding: 2px;
+  margin-top: 0px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: #3b0808;
 }
 
 /* Uso de medias query para mobile */
-
-@media screen and (min-width: 100px) and (max-width: 480px) {
-    section {
-      display:flex;
-      flex-wrap: wrap;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
   }
-
-  @media screen and (min-width: 100px) and (max-width: 480px) {
-    img {
-      width: 80%;
-    }
+}
+@media screen and (min-width: 320px) {
+  main {
+    grid-template-columns: repeat 2, 2fr;
+    grid-template-rows: repeat 2, 40%;
   }
-
+}
+@media screen and (min-width: 320px) {
+  .ofertas {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 40%);
+  }
+}
 /* Uso de medias query para tablet */
-
-  @media screen and (main-width: 600px) {
-    .ofertas {
-        grid-template-columns: repeat(2,1);
-        grid-template-rows: repeat(2,40%);
-    }
+@media screen and (min-width: 600px) {
+  .ofertas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40%);
   }
-
-  @media screen and (min-width: 600px) {
-    footer {
-      display:flex;
-      flex-wrap: wrap;
-      
-    }
+}
+@media screen and (min-width: 600px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
   }
-
-  /* Uso de medias query para desktop */
-
-  @media (min-width: 768px) and (max-width: 1281px) {
-    .ofertas {
-        grid-template-columns: repeat(2,1);
-        grid-template-rows: repeat(2,40%);
-    }
+}
+/* Uso de medias query para desktop */
+@media (min-width: 768px) and (max-width: 1281px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
-
-
-  @media (min-width: 768px) and (max-width: 1281px) {
-    footer {
-      display:flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
+}
+@media (min-width: 100px) and (max-width: 1281px) {
+  form {
+    display: inline-block;
+    flex-wrap: wrap;
   }
-
-  @media (min-width: 100px) and (max-width: 1281px) {
-    form {
-      display:inline-block;
-      flex-wrap:wrap;
-    }
+}
+/* Uso de media query para todas las pantallas */
+@media screen and (min-width: 100px) and (max-width: 1281px) {
+  img {
+    width: 60%;
   }
+}
 
-  
+/*# sourceMappingURL=style.css.map */

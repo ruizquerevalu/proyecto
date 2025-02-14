@@ -1,0 +1,15 @@
+//Estilos de desktop//
+
+@media (min-width: 768px) and (max-width: 1281px) {
+    footer {
+     @include responsive;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 1281px) {
+    form {
+      display:inline-block;
+      flex-wrap:wrap;
+    }
+  }

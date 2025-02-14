@@ -1,0 +1,16 @@
+
+//Estilos de tablet//
+
+@media screen and (min-width: 600px) {
+.ofertas{
+    @include grid2 ((repeat (2,1fr)), (repeat (2,40%)))
+}
+
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        @include responsive;
+      
+    }
+  }

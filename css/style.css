@@ -18,12 +18,14 @@ body h1 {
     grid-template-rows: repeat 2, 40%;
   }
 }
+
 @media screen and (min-width: 600px) {
   footer {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1281px) {
   footer {
     display: flex;
@@ -31,58 +33,72 @@ body h1 {
     align-items: center;
   }
 }
+
 @media (min-width: 100px) and (max-width: 1281px) {
   form {
     display: inline-block;
     flex-wrap: wrap;
   }
 }
+
 header {
   text-align: center;
   flex-wrap: wrap;
   background-color: white;
   font-family: "Vesper Libre", serif;
 }
+
 header .img {
   width: 80%;
 }
+
 header .navbar {
   background-color: #3b0808;
 }
+
 header .navbar ul {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 header .navbar li {
   margin: 0 15px;
 }
+
 header .navbar a {
   color: white;
   text-decoration: none;
   padding: 15px 20px;
   display: block;
 }
+
 header .container {
   display: flex;
 }
+
 header .sidebar {
   width: 25%;
   background-color: white;
   padding: 20 px;
 }
+
 header .main-content {
   width: 75%;
   background-color: white;
   padding: 20px;
 }
-header .nav-link:focus, header .nav-link:hover {
+
+header .nav-link:focus,
+header .nav-link:hover {
   color: #eefd08;
 }
+
 header .bg-body-tertiary {
   background-color: #3b0808 !important;
 }
+
 header .btn-outline-success {
   --bs-btn-color: white;
   --bs-btn-border-color: #ffffff;
@@ -90,20 +106,28 @@ header .btn-outline-success {
   --bs-btn-hover-bg: white;
   --bs-btn-hover-border-color: white;
 }
-header .btn-check:checked + .btn, header .btn.active, header .btn.show, header .btn:first-child:active, header :not(.btn-check) + .btn:active {
+
+header .btn-check:checked+.btn,
+header .btn.active,
+header .btn.show,
+header .btn:first-child:active,
+header :not(.btn-check)+.btn:active {
   color: #3b0808;
   background-color: #eefd08;
   border-color: #3b0808;
 }
+
 header .navbar-toggler {
   background-color: white;
   color: white;
 }
+
 header .navbar-toggler:focus {
   background-color: white;
   color: white;
   border: none;
 }
+
 @media (min-width: 1200px) {
   header .navbar-toggler {
     border-bottom-color: #eefd08;
@@ -117,6 +141,7 @@ main {
   padding: 1rem;
   text-align: center;
 }
+
 main .ofertas {
   display: grid;
   grid-template-columns: auto auto;
@@ -128,11 +153,13 @@ main .ofertas {
   padding: 1rem;
   margin: 0;
 }
+
 main .btn:hover {
   color: #eefd08;
   background-color: #3b0808;
   border-color: #3b0808;
 }
+
 main .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #3b0808;
@@ -149,29 +176,38 @@ main .btn-primary {
   --bs-btn-disabled-bg: #3b0808;
   --bs-btn-disabled-border-color: #3b0808;
 }
+
 main .carousel-caption {
   color: #eefd08;
 }
+
 main .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
   color: #3b0808;
 }
+
 main .card-group {
   align-items: center;
   padding: 10px;
 }
+
 main .col {
   padding: 10px;
   align-items: center;
 }
+
 main .carouselExampleAutoplaying {
   align-items: center;
 }
+
 main .card-body {
   text-align: center;
 }
+
 @media (min-width: 1200px) {
-  main .h2, main h2 {
+
+  main .h2,
+  main h2 {
     font-size: 2rem;
     color: #3b0808;
   }
@@ -188,12 +224,16 @@ section {
   color: white;
   gap: 25%;
 }
+
 @media (min-width: 100px) {
-  section .h4, section h4 {
+
+  section .h4,
+  section h4 {
     font-size: 1.5rem;
     color: #eefd08;
   }
 }
+
 section .div {
   width: 100%;
   display: flex;
@@ -218,18 +258,21 @@ footer {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 320px) {
   main {
     grid-template-columns: repeat 2, 2fr;
     grid-template-rows: repeat 2, 40%;
   }
 }
+
 @media screen and (min-width: 320px) {
   .ofertas {
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, 40%);
   }
 }
+
 /* Uso de medias query para tablet */
 @media screen and (min-width: 600px) {
   .ofertas {
@@ -237,12 +280,14 @@ footer {
     grid-template-rows: repeat(2, 40%);
   }
 }
+
 @media screen and (min-width: 600px) {
   footer {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 /* Uso de medias query para desktop */
 @media (min-width: 768px) and (max-width: 1281px) {
   footer {
@@ -251,12 +296,14 @@ footer {
     align-items: center;
   }
 }
+
 @media (min-width: 100px) and (max-width: 1281px) {
   form {
     display: inline-block;
     flex-wrap: wrap;
   }
 }
+
 /* Uso de media query para todas las pantallas */
 @media screen and (min-width: 100px) and (max-width: 1281px) {
   img {
